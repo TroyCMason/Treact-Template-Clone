@@ -1,0 +1,22 @@
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service_description {
+  display:flex;
+  flex-direction: column;
+}
+
