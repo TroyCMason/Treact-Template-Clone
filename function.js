@@ -1,3 +1,1 @@
-function onclick(event) {
-  openMenu()
-}
+// The best way to code is to build something meaningful from scratch
