@@ -27,27 +27,172 @@
           <li><a class="nav__link nav__login link__hover-effect"href="">Login</a></li>
           <li><a class="nav__link nav__signup" href="">Sign Up</a></li>
         </ul>
-        <button></button>
-        <div class="navbar_menu--backdrop"></div>
-
+        <button class="navbar__menu" onclick="openMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar__menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+        <div class="navbar__menu--backdrop">
+          <button class="navbar__menu--backdrop--button" onclick="closeMenu()">
+            <svg class="navbar__menu--cross" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar__menu--cross"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+          <ul class="navbar__menu--backdrop--list">
+            <li class="navbar__menu--backdrop--item">
+              <a href="#" class="nav__link link__hover-effect navbar__menu--item--text" href="#">About</a>
+            </li>
+            <li class="navbar__menu--backdrop--item">
+              <a href="#" class="nav__link link__hover-effect navbar__menu--item--text" href="#">Blog</a>
+            </li>
+            <li class="navbar__menu--backdrop--item">
+              <a href="#" class="nav__link link__hover-effect navbar__menu--item--text" href="#">Pricing</a>
+            </li>
+            <li class="navbar__menu--backdrop--item">
+              <a href="#" class="nav__link link__hover-effect navbar__menu--item--text" href="#">Contact Us</a>
+            </li>
+            <li class="navbar__menu--backdrop--item">
+              <a href="#" class="nav__link link__hover-effect navbar__menu--item--text" href="#">Login</a>
+            </li>
+            <li class="navbar__menu--backdrop--item">
+              <a href="#" class="nav__link link__hover-effect navbar__menu--item--text nav__signup" href="#">Sign Up</a>
+            </li>
+          </ul>
         </div>
-      </section>
+       </div>
+     </div>
     </section>
     
-    <section id ="about">
-      <header>
-        <div>
-         <h1 class="about-us-header">Beautiful React Templates <span class="purple">for you.</span></h1>
-        </div> 
-       </header>
-    </section>
-    <section id ="features">
+   <section id="about">
+        <div class="container">
+          <div class="row two--column row__padding">
+            <div class="about--us__right--column">
+              <h1 class="about--us--header">
+                Beautiful React Templates
+                <span class="text--purple"> for you.</span>
+              </h1>
+              <p class="about--us--description">
+                Our templates are easy to setup, understand and customize. Fully
+                modular components with a variety of pages and components.
+              </p>
+              <div class="about--us__email--input">
+                <input type="email" placeholder="Your E-mail Address">
+                <button>Get Started</button>
+              </div>
+              <div class="about--us__email--button__container">
+                <button class="about--us__email--button">Get Started</button>
+              </div>
+              <div class="about--us__customers">
+                <p>OUR TRUSTED CUSTOMERS</p>
+                <img src="./assets/customers-logo-strip.680ac7c2.png" alt="">
+              </div>
+            </div>
+            <div class="about--us__left--column">
+              <figure class="about--us__left--column__picture">
+                <img src="./assets/design-illustration-2.6da6a00b.svg" alt="" cla="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+        <div class="container">
+          <div class="row column--style row__padding">
+            <h5 class="features__header header">
+              <span class="text--purple">FEATURES</span>
+            </h5>
+            <h1 class="features__header-title title">
+              We have Amazing <span class="text--purple">Service.</span>
+            </h1>
+            <p class="features__header-description description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="features__wrapper">
+              <div class="features__feature">
+                <div class="features__img--container">
+                  <img src="./assets/shield-icon.daefe14b.svg" alt="">
+                </div>
+                <div class="features__text--container">
+                  <h3 class="features__feature--title">Secure</h3>
+                  <p class="features__feature--description description">
+                    We strictly only deal with vendors that provide top notch
+                    security.
+                  </p>
+                </div>
+              </div>
+              <div class="features__feature">
+                <div class="features__img--container">
+                  <img src="./assets/support-icon.f9253ffa.svg" alt="">
+                </div>
+                <div class="features__text--container">
+                  <h3 class="features__feature--title">24/7 Support</h3>
+                  <p class="features__feature--description description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="features__feature">
+                <div class="features__img--container">
+                  <img src="./assets/customize-icon.367468c9.svg" alt="">
+                </div>
+                <div class="features__text--container">
+                  <h3 class="features__feature--title">Customizable</h3>
+                  <p class="features__feature--description description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="features__feature">
+                <div class="features__img--container">
+                  <img src="./assets/reliable-icon.1367510a.svg" alt="">
+                </div>
+                <div class="features__text--container">
+                  <h3 class="features__feature--title">Reliable</h3>
+                  <p class="features__feature--description description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="features__feature">
+                <div class="features__img--container">
+                  <img src="./assets/fast-icon.dbb971a7.svg" alt="">
+                </div>
+                <div class="features__text--container">
+                  <h3 class="features__feature--title">Fast</h3>
+                  <p class="features__feature--description description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="features__feature">
+                <div class="features__img--container">
+                  <img src="./assets/simple-icon.673b7e17.svg" alt="">
+                </div>
+                <div class="features__text--container">
+                  <h3 class="features__feature--title">Easy</h3>
+                  <p class="features__feature--description description">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <section>
+
+      </section>
 
     </section>
     <section id ="steps">
 
     </section>
-    <section id =" values">
+    <section id ="values">
 
     </section>
     <section id = "pricing">
@@ -62,6 +207,127 @@
     <section id="ad">
 
     </section>
- <footer></footer>
+    <footer class=".footer_info">
+      <div class="footer__container footer__background">
+        <div class="footer__center">
+          <div class="column__container">
+            <div class="column">
+              <h5 class="column__title">MAIN</h5>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Blog</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">FAQs</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Support</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5 class="column__title">PRODUCT</h5>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Log In</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Personal</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Business</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Team</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5 class="column__title">PRESS</h5>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Logos</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Events</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Stories</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Office</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5 class="column__title">TEAM</h5>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Career</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Founders</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Culture</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Onboarding</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5 class="column__title">LEGAL</h5>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__item--link" href="#">GDPR</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Privacy Policy</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Terms of Service</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__item--link" href="#">Disclaimer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider__2"></div>
+          <div class="copyright__container">
+            <div class="company__name">
+              <figure class="comapny__img--container">
+                <img class="company__img" src="./assets/logo-light.d9a5d1b5.svg" alt="">
+              </figure>
+              <h5 class="company__name--text">Treact Inc.</h5>
+            </div>
+            <h6 class="copyright__actual--copyright">
+              © 2018 Treact Inc. All Rights Reserved.
+            </h6>
+            <div class="copyright__social--container">
+              <a href="" class="social__link">
+                <svg fill="#000000" viewBox="0 0 24 24">
+                  <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path>
+                </svg>
+              </a>
+              <a href="" class="social__link">
+                <svg fill="#000000" viewBox="0 0 24 24">
+                  <path d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"></path>
+                </svg>
+              </a>
+              <a href="" class="social__link">
+                <svg fill="#000000" viewBox="0 0 24 24">
+                  <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
