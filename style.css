@@ -141,6 +141,11 @@ button {
   transform: translate(150%);
 }
 
+.navbar__menu--cross{
+  width: 32px;
+
+}
+
 .menu--open .navbar__menu--backdrop--item {
   visibility: visible;
   opacity: 1;
