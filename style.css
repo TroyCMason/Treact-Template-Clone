@@ -65,6 +65,17 @@ button {
   cursor: pointer;
 }
 
+
+
+.menu-btn.open .menu-btn_burger::before{
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after{
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
 .link__button {
   background-color: #6415ff;
   border-color: transparent;
@@ -82,7 +93,7 @@ button {
 
 .navbar__menu--button {
   background-color: transparent;
-  color: #6415ff;
+  color: #6415ff; 
   padding: 0;
   display: none;
 }
@@ -110,6 +121,33 @@ button {
   padding: 24px;
   transition: all 500ms ease;
   opacity: 0;
+}
+
+fa-bars {
+  background-color: transparent;
+  text-align: center;
+  width: 32px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  display: none !important;
+}
+
+.backdrop__link--primary {
+  background-color: rgb(100, 21, 255);
+  color: white !important;
+  padding: 16px 36px;
+  border-radius: 9999px;
+}
+.backdrop__link {
+  text-decoration: none;
+  margin: 12px 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  font-size: 1.125rem;
+  color: black;
+  font-weight: 600;
+  transition: all 300ms ease;
 }
 
 .navbar__menu--backdrop--item {
