@@ -55,7 +55,7 @@ img {
 }
 
 button {
-  background-color: #6415ff;
+  background-color: #020202;
   border-width: 0;
   border-radius: 50px;
   padding: 12px 32px;
@@ -81,7 +81,7 @@ button {
   border-color: transparent;
   border-radius: 50px;
   padding: 12px 32px;
-  color: rgb(247, 250, 252);
+  color:#6415ff;
   font-weight: bold;
   font-size: 14px;
   transition: all 300ms ease;
@@ -184,6 +184,8 @@ fa-bars {
 .menu--open .navbar__menu--backdrop--item {
   visibility: visible;
   opacity: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu--open .navbar__menu--backdrop {
