@@ -65,23 +65,20 @@ button {
   cursor: pointer;
 }
 
-
-
-.menu-btn.open .menu-btn_burger::before{
+.menu-btn.open .menu-btn_burger::before {
   transform: rotate(45deg) translate(35px, -35px);
 }
 
-.menu-btn.open .menu-btn_burger::after{
+.menu-btn.open .menu-btn_burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
-
 
 .link__button {
   background-color: #6415ff;
   border-color: transparent;
   border-radius: 50px;
   padding: 12px 32px;
-  color:#6415ff;
+  color: #6415ff;
   font-weight: bold;
   font-size: 14px;
   transition: all 300ms ease;
@@ -93,7 +90,7 @@ button {
 
 .navbar__menu--button {
   background-color: transparent;
-  color: #6415ff; 
+  color: #6415ff;
   padding: 0;
 }
 
@@ -122,7 +119,12 @@ button {
   opacity: 0;
 }
 
-.fa, .fab, .fad, .fal, .far, .fas {
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -132,15 +134,13 @@ button {
   line-height: 1;
 }
 
-
-
 fa-times {
   position: absolute;
   right: 10px;
   top: 34px;
   padding: 8px;
   font-size: 20px;
-  transition: color 300ms ease
+  transition: color 300ms ease;
 }
 
 fa-bars {
@@ -201,16 +201,12 @@ fa-bars {
   transform: translate(150%);
 }
 
-
-
 .menu--open .navbar__menu--backdrop--item {
   visibility: visible;
   opacity: 1;
   justify-content: center;
   align-items: center;
 }
-
-
 
 .menu--open .navbar__menu--backdrop {
   visibility: visible;
@@ -1669,86 +1665,55 @@ fa-bars {
 
 /*menu get crossed when clicked*/
 
-
-.menu-button.close .menu-button-line:nth-child(1){
-  background:#6415ff;
-  ;
-  transform: rotate(45deg)translate(25px,15px);
-  transition:1.2s;
-animation:none;
-}  
-.menu-button.close .menu-button-line:nth-child(2){
-  opacity: 0;
-
-} 
-.menu-button.close .menu-button-line:nth-child(3){
+.menu-button.close .menu-button-line:nth-child(1) {
   background: #6415ff;
-  transform: rotate(-45deg)translate(40px,-30px);
-  transition:1.2s;
-animation:none;
-
-}  
-
+  transform: rotate(45deg) translate(25px, 15px);
+  transition: 1.2s;
+  animation: none;
+}
+.menu-button.close .menu-button-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-button.close .menu-button-line:nth-child(3) {
+  background: #6415ff;
+  transform: rotate(-45deg) translate(40px, -30px);
+  transition: 1.2s;
+  animation: none;
+}
 
 @keyframes slide {
-0%{
-  width:200px;
-  
+  0% {
+    width: 200px;
+  }
+
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 200px;
+  }
 }
 
-  50%{
-    width:100px;
-  
-}
-  100%{
-    width:200px;
-  
+.menu-button {
+  margin: 20% 40% 10%;
 }
 
-
+.menu-button:hover .menu-button-line:nth-child(1) {
+  animation: slide 1s infinite;
+}
+.menu-button:hover .menu-button-line:nth-child(2) {
+  animation: slide 2s infinite;
 }
 
-#plzclick{
-  color:#fff;
-  text-transform: capitalize;
-  
-  
-}
-#plzclick img{
-  height:50px;
- 
-  
-}
-.menu-button{
- margin: 20% 40% 10% ;
-  
-  
+.menu-button:hover .menu-button-line:nth-child(3) {
+  animation: slide 1.4s infinite;
 }
 
-.menu-button:hover .menu-button-line:nth-child(1){
- animation:slide 1s infinite;
-  
-  
-}
-.menu-button:hover .menu-button-line:nth-child(2){
- animation:slide 2s infinite;
-  
-  
-}
-.menu-button:hover .menu-button-line:nth-child(3){
- animation:slide 1.4s infinite;
-  
-  
-  
-}
-
-.menu-button-line{
-    height: 10px;
-    width: 12px;
-    margin: 0.5rem 0;
-    background: #6415ff;
-  transition:.3s;
-   transition-timing-function: linear;
-    
-  
+.menu-button-line {
+  height: 10px;
+  width: 12px;
+  margin: 0.5rem 0;
+  background: #6415ff;
+  transition: 0.3s;
+  transition-timing-function: linear;
 }
