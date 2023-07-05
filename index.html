@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Free Modern React Templates & Components for building landing pages and UIs - Treact</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link href= "icon" href="./assets/">
+  <link rel="stylesheet" href="style.css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="function.js" defer></script>
 </head>
 <body>
@@ -19,6 +17,7 @@
             <img class = "logo__img" src="./assets/logo.2c489fc4.svg" alt="">
             Treact
           </a>
+          
           <ul class="nav__links">
           <li><a class="nav__link link__hover-effect" href="">About</a></li>
           <li><a class="nav__link link__hover-effect" href="">Blog</a></li>
@@ -28,11 +27,13 @@
           <li><a class="nav__link nav__signup" href="">Sign Up</a></li>
         </ul>
         <figure class="navbar__menu" onclick="openMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar__menu">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
+          <div class="menu-button">
+            <div class="menu-button-line"></div>
+            <div class="menu-button-line"></div>
+            <div class="menu-button-line"></div>
+          </figure>
+        </div>
+       
       </figure>
         <div class="navbar__menu--backdrop">
           <figure class="navbar__menu--backdrop--button" onclick="closeMenu()">
@@ -46,7 +47,9 @@
             <a href="" class="backdrop__link" onclick="closeMenu()">Contact Us</a>
             <a href="" class="backdrop__link" onclick="closeMenu()">Login</a>
             <a href="" class="backdrop__link backdrop__link--primary" onclick="closeMenu()">Sign Up</a>
-            <i class="fas fa-times" onclick="closeMenu()" aria-hidden="true"></i>
+            <i class="fas fa-times" onclick="closeMenu()" aria-hidden="true">
+             
+            </i>
           </div>
         </div>
        </div>

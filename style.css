@@ -95,7 +95,6 @@ button {
   background-color: transparent;
   color: #6415ff; 
   padding: 0;
-  display: none;
 }
 
 .about--us__email--button__container {
@@ -109,7 +108,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 24px 16px;
+  margin: 1.5rem 1rem;
   display: flex;
   max-height: 400px;
   z-index: 100;
@@ -123,8 +122,30 @@ button {
   opacity: 0;
 }
 
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+
+
+fa-times {
+  position: absolute;
+  right: 10px;
+  top: 34px;
+  padding: 8px;
+  font-size: 20px;
+  transition: color 300ms ease
+}
+
 fa-bars {
-  background-color: transparent;
+  background-color: #6415ff;
+  color: #6415ff;
   text-align: center;
   width: 32px;
   font-size: 20px;
@@ -142,6 +163,7 @@ fa-bars {
 .backdrop__link {
   text-decoration: none;
   margin: 12px 0;
+  justify-content: center;
   border-bottom: 2px solid transparent;
   padding-bottom: 4px;
   font-size: 1.125rem;
@@ -187,6 +209,8 @@ fa-bars {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .menu--open .navbar__menu--backdrop {
   visibility: visible;
@@ -1641,4 +1665,90 @@ fa-bars {
   .about--us__email--button__container {
     display: block;
   }
+}
+
+/*menu get crossed when clicked*/
+
+
+.menu-button.close .menu-button-line:nth-child(1){
+  background:#6415ff;
+  ;
+  transform: rotate(45deg)translate(25px,15px);
+  transition:1.2s;
+animation:none;
+}  
+.menu-button.close .menu-button-line:nth-child(2){
+  opacity: 0;
+
+} 
+.menu-button.close .menu-button-line:nth-child(3){
+  background: #6415ff;
+  transform: rotate(-45deg)translate(40px,-30px);
+  transition:1.2s;
+animation:none;
+
+}  
+
+
+@keyframes slide {
+0%{
+  width:200px;
+  
+}
+
+  50%{
+    width:100px;
+  
+}
+  100%{
+    width:200px;
+  
+}
+
+
+}
+
+#plzclick{
+  color:#fff;
+  text-transform: capitalize;
+  
+  
+}
+#plzclick img{
+  height:50px;
+ 
+  
+}
+.menu-button{
+ margin: 20% 40% 10% ;
+  
+  
+}
+
+.menu-button:hover .menu-button-line:nth-child(1){
+ animation:slide 1s infinite;
+  
+  
+}
+.menu-button:hover .menu-button-line:nth-child(2){
+ animation:slide 2s infinite;
+  
+  
+}
+.menu-button:hover .menu-button-line:nth-child(3){
+ animation:slide 1.4s infinite;
+  
+  
+  
+}
+
+.menu-button-line{
+    height: 10px;
+    width: 12px;
+    margin: 0.5rem 0;
+    background: #6415ff;
+  transition:.3s;
+   transition-timing-function: linear;
+    
+  
 }
