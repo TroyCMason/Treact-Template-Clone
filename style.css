@@ -365,7 +365,23 @@ border-radius: 8px;
   border-radius: 50px;
 }
 
+.menu-toggle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
 
+.bar{
+  width: 30px;
+  height: 3px;
+  background-color: #742cff;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease;
+}
 
 /* ABOUT US */
 
