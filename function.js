@@ -29,5 +29,4 @@ function closeMenu() {
 // The best way to code is to build something meaningful from scratch'
 
 
-//how to create a hamburger menu?
 
